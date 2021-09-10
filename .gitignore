@@ -1,0 +1,94 @@
+#
+# AzerothCore
+#
+
+/conf/*
+!/conf/dist
+/modules/*
+!/modules/*.md
+!/modules/*.sh
+/build*/
+/var/*
+!/var/build/.gitkeep
+!/var/ccache/.gitkeep
+/env/dist/*
+!/env/dist/.gitkeep
+/env/user/*
+/env/docker/*
+!/env/docker/bin/.gitkeep
+!/env/docker/data/.gitkeep
+!/env/docker/etc/authserver.conf.dockerdist
+!/env/docker/etc/worldserver.conf.dockerdist
+!/env/docker/logs/.gitkeep
+/.env*
+/apps/joiner
+/deps/deno
+
+/docker-compose.override.yml
+
+!.gitkeep
+
+#
+#Generic
+#
+
+.directory
+.mailmap
+*.orig
+*.rej
+*~
+.hg/
+*.kdev*
+.DS_Store
+CMakeLists.txt.user
+*.bak
+*.patch
+*.diff
+*.REMOTE.*
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+
+#
+# IDE & other software
+#
+/.settings/
+/.externalToolBuilders/*
+# exclude in all levels
+nbproject/
+.sync.ffs_db
+*.kate-swp
+.browse.VC*
+.idea
+cmake-build-debug/*
+cmake-build-debug-coverage/*
+coverage-report/
+
+#
+# Eclipse
+#
+*.pydevproject
+.metadata
+.gradle
+tmp/
+*.tmp
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.project
+.cproject
+
+
+# ==================
+#
+#  CUSTOM
+#
+#  put below your custom ignore rules
+#  for example , if you want to include a
+#  module directly in repositoryyou can do:
+#
+#  !modules/yourmodule
+#
+# ==================
